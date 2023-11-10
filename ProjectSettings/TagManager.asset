@@ -20,7 +20,7 @@ TagManager:
   - EnemyHitbox
   - Obe
   - UI
-  - Enemy
+  - GroundDetection
   - 
   - 
   - 
