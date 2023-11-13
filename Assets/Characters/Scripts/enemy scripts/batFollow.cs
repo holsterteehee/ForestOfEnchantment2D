@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class batFollow : MonoBehaviour
 {
+    Rigidbody2D rb;
     public float speed;
     private Transform player;
     public float lineOfSite;
@@ -19,6 +20,11 @@ public class batFollow : MonoBehaviour
         if(distanceFromPlayer <  lineOfSite)
         transform.position = Vector2.MoveTowards(this.transform.position,player.position,speed*Time.deltaTime);
 
+    }
+
+    public void OnHit(int damage, Vector2 knockback)
+    {
+        rb.velocity = new Vector2(knockback.x, rb.velocity.y + knockback.y);
     }
     
     //code bellow is a visual to see the range in game
