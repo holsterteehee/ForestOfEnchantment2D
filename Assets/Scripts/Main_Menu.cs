@@ -8,7 +8,17 @@ using TMPro;
 public class MenuController : MonoBehaviour
 {
     //Loads Game
-    public void Play()
+    public void LoadLevel1()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Holly's Scene");
+    }
+    public void LoadLevel2()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Isael Scene - Snowy");
+    }
+    public void LoadLevel3()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
