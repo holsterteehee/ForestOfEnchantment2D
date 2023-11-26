@@ -512,7 +512,7 @@ MonoBehaviour:
   _isAlive: 1
   isInvincible: 0
   invincibilityTime: 1
-  respawnPoint: {fileID: 0}
+  respawnPoint: {fileID: 4355082728938082578}
 --- !u!114 &1208939180830153265
 MonoBehaviour:
   m_ObjectHideFlags: 0

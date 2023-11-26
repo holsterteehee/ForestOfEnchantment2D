@@ -88,18 +88,18 @@ public class Damageable : MonoBehaviour
             Health -= damage;
             isInvincible = true;
 
-            //if (animator != null)
+            if (animator != null)
             animator.SetTrigger(AnimationStrings.hitTrigger);
             LockVelocity = true;
             damageableHit?.Invoke(damage, knockback);
             CharacterEvents.characterDamaged.Invoke(gameObject, damage);
 
-            // Check if the player's health is zero or below
-            //if (Health <= 0)
-            //{
-            //    // Respawn the player at the respawn point
-            //    Respawn();
-            //}
+            //check if the player's health is zero or below
+            if (_health <= 0)
+            {
+                // respawn the player at the respawn point
+                Respawn();
+            }
 
             return true;
         }
@@ -122,19 +122,19 @@ public class Damageable : MonoBehaviour
         return false;
     }
 
-    // Function to respawn the player at the respawn point
-    //public void Respawn()
-    //{
-    //    if (respawnPoint != null)
-    //    {
-    //        transform.position = respawnPoint.position;
-    //        Health = MaxHealth;
-    //        IsAlive = true;
-    //    }
-    //    else
-    //    {
-    //        print("Respawn not set.");
-    //        //Debug.LogError("Respawn point not assigned to Damageable script.");
-    //    }
-    //}
+    //Function to respawn the player at the respawn point
+    public void Respawn()
+    {
+        if (respawnPoint != null)
+        {
+            transform.position = respawnPoint.position;
+            Health = MaxHealth;
+            IsAlive = true;
+        }
+        else
+        {
+            print("Respawn not set.");
+            //Debug.LogError("Respawn point not assigned to Damageable script.");
+        }
+    }
 }
