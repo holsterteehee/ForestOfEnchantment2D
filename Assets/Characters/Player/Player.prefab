@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 4534561155303483256}
   - component: {fileID: 4141602287297856597}
   - component: {fileID: 6954414119449976666}
-  - component: {fileID: 7175780714211076992}
   - component: {fileID: 3104056424230076545}
   - component: {fileID: 5754041573299501744}
   - component: {fileID: 1208939180830153265}
@@ -282,7 +281,7 @@ MonoBehaviour:
     m_ActionName: Player/Jump[/Keyboard/space]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7175780714211076992}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: OnRangedAttack
         m_Mode: 0
@@ -512,7 +511,7 @@ MonoBehaviour:
   _isAlive: 1
   isInvincible: 0
   invincibilityTime: 1
-  respawnPoint: {fileID: 4355082728938082578}
+  respawnPoint: {fileID: 0}
 --- !u!114 &1208939180830153265
 MonoBehaviour:
   m_ObjectHideFlags: 0
