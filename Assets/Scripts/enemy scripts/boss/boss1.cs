@@ -14,6 +14,8 @@ public class boss1 : MonoBehaviour
     public GameObject bullet;
     public GameObject bulletParent;
 
+    
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;    
@@ -25,13 +27,45 @@ public class boss1 : MonoBehaviour
         if(distanceFromPlayer <  lineOfSite && distanceFromPlayer>shootingRange)
         {
             transform.position = Vector2.MoveTowards(this.transform.position,player.position,speed*Time.deltaTime);
+        
+
+            //flip sprite to face the player
+            if (player.position.x < transform.position.x)
+            {
+                transform.localScale = new Vector3(1, 1, 1);
+            }
+
+            else 
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
+
         }
 
         else if (distanceFromPlayer<= shootingRange && nextFireTime <Time.time)
         {
+
+
+            if (player.position.x < transform.position.x)
+             {
+                // Player is on the left side
+                transform.localScale = new Vector3(1, 1, 1);
+             }
+            else
+            {
+                // Player is on the right side
+                transform.localScale = new Vector3(-1, 1, 1);
+            }
+
+
             Instantiate(bullet,bulletParent.transform.position,Quaternion.identity);
             nextFireTime = Time.time + fireRate;
         }
+
+
+         
+   
+
     }
 
 
@@ -52,5 +86,8 @@ public class boss1 : MonoBehaviour
     }
     
 
+    
+
+   
     
 }
