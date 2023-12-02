@@ -20,7 +20,8 @@ GameObject:
   - component: {fileID: 3104056424230076545}
   - component: {fileID: 5754041573299501744}
   - component: {fileID: 1208939180830153265}
-  m_Layer: 7
+  - component: {fileID: 7175780714211076992}
+  m_Layer: 0
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -433,29 +434,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.25, y: 0.4990058}
   m_EdgeRadius: 0
---- !u!114 &7175780714211076992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 427222226265067717}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d53db311ae4f264d9ef5114e30e8508, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkSpeed: 7
-  runSpeed: 14
-  airWalkSpeed: 7
-  attackingMoveSpeed: 2
-  jumpImpulse: 10
-  groundDistance: 0.05
-  groundCollider: {fileID: 0}
-  wallCollider: {fileID: 0}
-  _isFacingRight: 1
-  _isRunning: 0
-  _isMoving: 0
 --- !u!114 &3104056424230076545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -506,6 +484,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  healthChanged:
+    m_PersistentCalls:
+      m_Calls: []
   _maxHealth: 100
   _health: 100
   _isAlive: 1
@@ -526,6 +507,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   launchPoint: {fileID: 2728183027954339402}
   projectilePrefab: {fileID: 3900300130662378113, guid: 59e1ddc0d9afdc54c91111acd967dfdf, type: 3}
+--- !u!114 &7175780714211076992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427222226265067717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d53db311ae4f264d9ef5114e30e8508, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 7
+  runSpeed: 14
+  airWalkSpeed: 7
+  attackingMoveSpeed: 2
+  jumpImpulse: 10
+  groundDistance: 0.05
+  groundCollider: {fileID: 0}
+  wallCollider: {fileID: 0}
+  _isFacingRight: 1
+  _isRunning: 0
+  _isMoving: 0
 --- !u!1 &4414690373624447834
 GameObject:
   m_ObjectHideFlags: 0
