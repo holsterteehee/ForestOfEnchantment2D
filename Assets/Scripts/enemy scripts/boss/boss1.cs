@@ -14,10 +14,15 @@ public class boss1 : MonoBehaviour
     public GameObject bullet;
     public GameObject bulletParent;
 
+    private Animator animator;
+
     
 
     void Start()
     {
+        
+
+        animator = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").transform;    
     }
 
@@ -27,7 +32,7 @@ public class boss1 : MonoBehaviour
         if(distanceFromPlayer <  lineOfSite && distanceFromPlayer>shootingRange)
         {
             transform.position = Vector2.MoveTowards(this.transform.position,player.position,speed*Time.deltaTime);
-        
+
 
             //flip sprite to face the player
             if (player.position.x < transform.position.x)
@@ -40,11 +45,16 @@ public class boss1 : MonoBehaviour
                 transform.localScale = new Vector3(-1, 1, 1);
             }
 
+            animator.SetBool("IsAttacking", false);
+
+
         }
 
         else if (distanceFromPlayer<= shootingRange && nextFireTime <Time.time)
         {
 
+
+            animator.SetBool("IsAttacking", true);
 
             if (player.position.x < transform.position.x)
              {
@@ -60,6 +70,11 @@ public class boss1 : MonoBehaviour
 
             Instantiate(bullet,bulletParent.transform.position,Quaternion.identity);
             nextFireTime = Time.time + fireRate;
+        }
+
+        else 
+        {
+            animator.SetBool("IsAttacking", false);
         }
 
 
