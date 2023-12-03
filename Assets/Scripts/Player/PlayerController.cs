@@ -239,4 +239,23 @@ public void OnMove(InputAction.CallbackContext context)
         rb.velocity = new Vector2(knockback.x, rb.velocity.y + knockback.y);
 
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Check if the player collided with a moving platform
+        if (collision.gameObject.CompareTag("Platform"))
+        {
+            // Parent the player to the moving platform to move along with it
+            transform.parent = collision.transform;
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        // Unparent the player when leaving the moving platform
+        if (collision.gameObject.CompareTag("Platform"))
+        {
+            transform.parent = null;
+        }
+    }
 }
