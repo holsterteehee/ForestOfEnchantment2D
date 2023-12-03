@@ -139,4 +139,28 @@ public class Damageable : MonoBehaviour
             //Debug.LogError("Respawn point not assigned to Damageable script.");
         }
     }
+    // Function to respawn the player at the respawn point
+    //public void Respawn()
+    //{
+    //    if (respawnPoint != null)
+    //    {
+    //        transform.position = respawnPoint.position;
+    //        Health = MaxHealth;
+    //        IsAlive = true;
+    //    }
+    //    else
+    //    {
+    //        print("Respawn not set.");
+    //        //Debug.LogError("Respawn point not assigned to Damageable script.");
+    //    }
+    //}
+
+    public int baseDamage = 10; // Base damage value for the player
+/*
+    public int GetDamage()
+    {
+        // You could add more logic here to calculate damage based on weapon, buffs, etc.
+        return baseDamage;
+    }
+    */
 }
