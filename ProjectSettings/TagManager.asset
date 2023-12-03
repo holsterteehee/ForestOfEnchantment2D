@@ -6,7 +6,7 @@ TagManager:
   tags:
   - NPC
   - Spike
-  - WeakPoint
+  - Platform
   layers:
   - Default
   - TransparentFX
