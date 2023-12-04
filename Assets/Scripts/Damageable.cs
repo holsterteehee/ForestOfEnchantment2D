@@ -140,7 +140,7 @@ public class Damageable : MonoBehaviour
         }
     }
 
-    public int baseDamage = 10; // Base damage value for the player
+    //public int baseDamage = 10; // Base damage value for the player
 /*
     public int GetDamage()
     {
