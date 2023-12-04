@@ -2393,6 +2393,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7460791308447836135, guid: 12cbfe4b9e552d746b76a9759a680a1d, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8431991487742049925, guid: 12cbfe4b9e552d746b76a9759a680a1d, type: 3}
       propertyPath: m_Name
       value: Mushroom-Enemy
