@@ -139,4 +139,13 @@ public class Damageable : MonoBehaviour
             //Debug.LogError("Respawn point not assigned to Damageable script.");
         }
     }
+
+    public int baseDamage = 10; // Base damage value for the player
+/*
+    public int GetDamage()
+    {
+        // You could add more logic here to calculate damage based on weapon, buffs, etc.
+        return baseDamage;
+    }
+    */
 }
