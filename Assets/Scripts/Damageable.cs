@@ -94,7 +94,7 @@ public class Damageable : MonoBehaviour
             animator.SetTrigger(AnimationStrings.hitTrigger);
             LockVelocity = true;
             damageableHit?.Invoke(damage, knockback);
-            CharacterEvents.characterDamaged.Invoke(gameObject, damage);
+            //CharacterEvents.characterDamaged.Invoke(gameObject, damage);
 
             //check if the player's health is zero or below
             if (_health <= 0)

@@ -11,12 +11,12 @@ public class MenuController : MonoBehaviour
     public void LoadLevel1()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Holly's Scene");
+        SceneManager.LoadScene("Forest Level");
     }
     public void LoadLevel2()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Isael Scene - Snowy");
+        SceneManager.LoadScene("Snowy Level");
     }
     public void LoadLevel3()
     {
