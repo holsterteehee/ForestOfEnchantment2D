@@ -40134,8 +40134,16 @@ PrefabInstance:
       propertyPath: m_LayerOverridePriority
       value: -1052
       objectReference: {fileID: 0}
+    - target: {fileID: 7046516103544233503, guid: b0ed523f65ea6c047afe63c3f6afbe8f, type: 3}
+      propertyPath: jumpImpulse
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 7175780714211076992, guid: b0ed523f65ea6c047afe63c3f6afbe8f, type: 3}
       propertyPath: _isMoving
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7175780714211076992, guid: b0ed523f65ea6c047afe63c3f6afbe8f, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7175780714211076992, guid: b0ed523f65ea6c047afe63c3f6afbe8f, type: 3}

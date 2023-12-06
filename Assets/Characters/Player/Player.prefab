@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 4534561155303483256}
   - component: {fileID: 4141602287297856597}
   - component: {fileID: 6954414119449976666}
-  - component: {fileID: 3104056424230076545}
   - component: {fileID: 5754041573299501744}
   - component: {fileID: 1208939180830153265}
   - component: {fileID: 7175780714211076992}
@@ -434,29 +433,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.25, y: 0.4990058}
   m_EdgeRadius: 0
---- !u!114 &3104056424230076545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 427222226265067717}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d53db311ae4f264d9ef5114e30e8508, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkSpeed: 7
-  runSpeed: 14
-  airWalkSpeed: 7
-  attackingMoveSpeed: 2
-  jumpImpulse: 12
-  groundDistance: 0.05
-  groundCollider: {fileID: 0}
-  wallCollider: {fileID: 0}
-  _isFacingRight: 1
-  _isRunning: 0
-  _isMoving: 0
 --- !u!114 &5754041573299501744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -523,7 +499,7 @@ MonoBehaviour:
   runSpeed: 14
   airWalkSpeed: 7
   attackingMoveSpeed: 2
-  jumpImpulse: 13
+  jumpImpulse: 14
   groundDistance: 0.05
   groundCollider: {fileID: 0}
   wallCollider: {fileID: 0}

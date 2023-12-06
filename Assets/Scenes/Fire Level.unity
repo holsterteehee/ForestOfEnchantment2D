@@ -123,12 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &36947016 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 427222226265067717, guid: b0ed523f65ea6c047afe63c3f6afbe8f, type: 3}
+  m_PrefabInstance: {fileID: 1868866413}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &36947026 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7046516103544233503, guid: b0ed523f65ea6c047afe63c3f6afbe8f, type: 3}
   m_PrefabInstance: {fileID: 1868866413}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 36947016}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d53db311ae4f264d9ef5114e30e8508, type: 3}
@@ -7538,7 +7543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bea2f4dabd364248b83d8fe1ba972c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 36947016}
   respawnPoint: {fileID: 162974378}
 --- !u!1 &1727561176
 GameObject:
@@ -53464,7 +53469,28 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5754041573299501744, guid: b0ed523f65ea6c047afe63c3f6afbe8f, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 162974378}
+    - target: {fileID: 7046516103544233503, guid: b0ed523f65ea6c047afe63c3f6afbe8f, type: 3}
+      propertyPath: jumpImpulse
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7175780714211076992, guid: b0ed523f65ea6c047afe63c3f6afbe8f, type: 3}
+      propertyPath: _isMoving
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7175780714211076992, guid: b0ed523f65ea6c047afe63c3f6afbe8f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7175780714211076992, guid: b0ed523f65ea6c047afe63c3f6afbe8f, type: 3}
+      propertyPath: jumpImpulse
+      value: 14
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
