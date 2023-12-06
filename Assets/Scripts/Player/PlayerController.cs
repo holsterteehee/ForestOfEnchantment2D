@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     public float runSpeed = 14f;
     public float airWalkSpeed = 7f;
     public float attackingMoveSpeed = 2f;
-    public float jumpImpulse = 10f;
+    public float jumpImpulse = 13f;
     public float groundDistance = 0.05f;
 
 
