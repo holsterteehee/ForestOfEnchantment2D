@@ -70,6 +70,8 @@ public class boss1 : MonoBehaviour
 
             Instantiate(bullet,bulletParent.transform.position,Quaternion.identity);
             nextFireTime = Time.time + fireRate;
+
+            
         }
 
         else 
