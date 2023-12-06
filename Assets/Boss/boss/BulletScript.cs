@@ -7,7 +7,7 @@ public class BulletScript : MonoBehaviour
     GameObject target;
     public float speed;
     Rigidbody2D bulletRB;
-    public int damageAmount = 10; // Adjust the damage amount as needed
+    public int damageAmount = 20; // Adjust the damage amount as needed
 
     void Start()
     {
