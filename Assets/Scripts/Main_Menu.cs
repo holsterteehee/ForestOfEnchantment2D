@@ -20,7 +20,8 @@ public class MenuController : MonoBehaviour
     }
     public void LoadLevel3()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Fire Level");
     }
     //Quits Game
     public void Quit()
