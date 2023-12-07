@@ -6,6 +6,7 @@ public class ButtonController : MonoBehaviour
     public GameObject animatedObject; // Drag the GameObject with the Animator component here
     private Animator objectAnimator;
     public GameObject portal;
+    public GameObject power;
 
     void Start()
     {
@@ -15,13 +16,14 @@ public class ButtonController : MonoBehaviour
 
     void Update()
     {
-        // Check if the player presses the 'E' key
-        if (Input.GetKeyDown(KeyCode.E))
+        // Check if the player presses the 'Z' key
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             animatedObject.SetActive(true);
             objectAnimator.SetTrigger("PressButton");
             // Call the KillBoss method
             bossController.KillBoss();
+            power.SetActive(false);
 
             // Trigger the animation on the separate GameObject
             portal.SetActive(true);
