@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fire Level.unity
     guid: e9ae836b40b0872478d71333e92f36c5
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: 092a949d0c67833468ff3928a52bb6f2
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 6c811eee38e968643817f0996d336563, type: 2}
